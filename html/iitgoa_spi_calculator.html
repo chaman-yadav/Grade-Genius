@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>SPI Calculator</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/spi_calculator_styles.css">
+</head>
+<body id="bg">
+    <!-- Header -->
+    <div id="header" class="no-print">
+        <!-- Logo -->
+        <img id="logo" src="image/logo_extended.png">
+    </div>
+    <!-- Navigation -->
+    <div class="navigation no-print">
+        <!-- Navigation links -->
+        <a href="../homepage.html">Home</a>
+        <!-- Dropdown menu for SPI Calculator -->
+        <div class="dropdown">
+            <button class="dropbtn">SPI Calculator</button>
+            <div class="dropdown-content">
+                <!-- Links for different calculators -->
+                <a href="iitgoa_spi_calculator.html">For IIT Goa</a>
+                <a href="spi_calculator.html">For Other Colleges</a>
+            </div>
+        </div>
+        <!-- Link to CPI Calculator -->
+        <a href="cpi.html">CPI Calculator</a>
+        <!-- Link to SPI Predictor -->
+        <a href="spi_predictor.html">SPI Predictor</a>
+    </div>
+    <!-- Main content container -->
+    <div class="container">
+        <div class="no-print">
+            <!-- Title for SPI Calculator -->
+            <h1>SPI Calculator</h1>
+            <!-- Form for SPI calculation -->
+            <form id="spiForm" class="full-width-form">
+                <!-- Input field for semester number -->
+                <label for="numSubjects">SEMESTER NO.</label>
+                <input type="number" id="numSubjects" required min="1">
+                <!-- Dropdown to choose branch -->
+                <label for="br">Choose your branch:</label>
+                <select name="br" id="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="cse">CSE</option>
+                    <option value="mnc">MNC</option>
+                    <option value="elec">EE</option>
+                    <option value="mech">ME</option>
+                </select><br><br>
+                <!-- Button to proceed -->
+                <button id="proceedButton" type="button">Proceed</button><br><br>
+            </form>
+        </div>
+        <!-- Container for marksheet fields -->
+        <div class="fieldsContainerMarksheet" id="fieldsContainerMarksheet"></div>
+        <!-- Container for SPI calculation fields -->
+        <div class="fieldsContainer" id="fieldsContainer"></div>
+        <!-- Calculate button container -->
+        <div class="calculate-button-container no-print" id="calculateButtonContainer">
+            <!-- Button to calculate SPI -->
+            <button id="calculateButton" type="submit">Calculate SPI</button>
+        </div>
+        <!-- Marksheet button container -->
+        <div class="marksheetContainer no-print" id="marksheetContainer">
+            <!-- Button to generate marksheet -->
+            <button id="generateButton" type="submit">Marksheet</button>
+        </div>
+        <!-- Reset button container -->
+        <div class="resetContainer no-print" id="resetContainer">
+            <!-- Button to reset form -->
+            <button id="rButton" type="submit"><a href="iitgoa_spi_calculator.html">Reset</a></button>
+        </div>
+        <!-- Paragraph to display SPI result -->
+        <p id="spiResult"></p>
+    </div>
+    <!-- External JavaScript file -->
+    <script src="js/iitgoa_spi_calculator.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content no-print">
+            <!-- Copyright information -->
+            <p>&copy; 2024 Grade Genius. All rights reserved.</p>
+            <!-- Footer links -->
+            <ul class="footer-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

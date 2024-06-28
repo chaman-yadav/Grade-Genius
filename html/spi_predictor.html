@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="css/front.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <!-- Shortcut icon -->
+    <link href="mini_logo.png" rel="shortcut icon" type="image/x-icon">
+    <!-- Title of the page -->
+    <title>GradeGenius</title>
+</head>
+<body id="bg">
+    <!-- Header section -->
+    <div id="header">
+        <img id="logo" src="image/logo_extended.png">
+    </div>
+    <!-- Navigation bar -->
+    <div class="navigation">
+        <!-- Home link -->
+        <a href="../homepage.html">Home</a>
+        <!-- Dropdown for SPI Calculator -->
+        <div class="dropdown">
+            <button class="dropbtn">SPI Calculator</button>
+            <div class="dropdown-content">
+                <!-- Links for SPI calculator for different colleges -->
+                <a href="iitgoa_spi_calculator.html">For IIT Goa</a>
+                <a href="spi_calculator.html">For Other Colleges</a>
+            </div>
+        </div>
+        <!-- Link to CPI Calculator -->
+        <a href="cpi.html">CPI Calculator</a>
+        <!-- Link to SPI Predictor -->
+        <a href="spi_predictor.html">SPI Predictor</a>
+    </div>
+    <!-- Information section -->
+    <div id="info9">
+        <!-- Heading for information -->
+        <p id="info1_h1"><b>What is a SPI Predictor?</b></p>
+        <!-- Description of SPI Predictor -->
+        <p>This feature helps you to calculate SPI you must receive in order to achieve a particular CPI.</p>
+    </div>
+    <!-- Input section -->
+    <div id="inp1">
+        <!-- Table for input fields -->
+        <table class="table">
+            <tr>
+                <!-- Label and dropdown for number of semesters completed -->
+                <td>Number of semesters completed:</td>
+                <td>
+                    <select type="text" id="nsem">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- Empty row -->
+            <tr></tr>
+            <tr>
+                <!-- Label and input field for expected CPI -->
+                <td>Expected CPI:</td>
+                <td><input type="text" id="exp"></td>
+            </tr>
+            <!-- Empty row -->
+            <tr></tr>
+            <tr>
+                <!-- Button to trigger function for entering SPIs -->
+                <td><button class="btn" onclick="no_sems()">Enter SPI's</button></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Result section -->
+    <div id="result_ga">
+        <!-- Placeholder for result -->
+        <b><span id="span_re_ga"></span></b>
+    </div>
+    <!-- Script for SPI calculation -->
+    <script src="js/ga.js" defer></script>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer-content">
+            <!-- Copyright notice -->
+            <p>&copy; 2024 Grade Genius. All rights reserved.</p>
+            <!-- Links to different pages -->
+            <ul class="footer-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

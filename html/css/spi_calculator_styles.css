@@ -1,0 +1,555 @@
+/* spi_calculator_styles.css */
+
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+#info1{
+    width:25%;
+    background-color: #947357;
+    margin-left:10px ;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 60%;
+    color:white;
+    font-size: 17px;
+    border-radius: 5px;
+    border-style: solid;
+    padding-left: 10px;
+}
+
+.navigation {
+    background-color: #000000;
+    overflow: hidden;
+    text-align: center;
+  
+ 
+}
+#logo{
+    margin:30px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    height: 150px;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 9%;
+}
+
+.navigation a:hover {
+    background-color: #7a7a7a;
+    color: black;
+    font-weight: bolder;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+}
+#bg{
+    background-image: url(bgimg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+   
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.dropdown:hover {
+    background-color: #000000;
+    color: black;
+
+}
+
+.dropbtn:hover {
+    background-color: #7a7a7a;
+    color: black;
+    font-weight: bolder;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #000000;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #7a7a7a;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+}
+
+/* 
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+
+.navigation {
+    background-color: #036150;
+    overflow: hidden;
+    text-align: center;
+  
+ 
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: #1bc2b4;
+    color: black;
+    font-weight: bolder;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.dropdown:hover {
+    background-color: #005850;
+    color: black;
+
+}
+
+.dropbtn:hover {
+    background-color: #1bc2b4;
+    color: black;
+    font-weight: bolder;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #13533d;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #1bc2b4;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   
+} */
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em; /* Increase font size for emphasis */
+    font-family: "Arial", sans-serif; /* Use a commonly readable font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+    letter-spacing: 1px; /* Slightly increase letter spacing for clarity */
+    margin-bottom: 20px; /* Add some space at the bottom for better separation */
+    /* Add transitions for a smoother appearance on hover */
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #ff6f61; /* Change color on hover to a more vibrant one */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8); /* Enhance text shadow on hover */
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    margin-top: 10px;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label,
+.input-group input,
+.input-group select {
+    width: calc(33.33% - 10px);
+    margin-right: 10px;
+}
+
+.input-group input[type="number"] {
+    width: calc(30% - 10px); /* Adjust width as needed */
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+select {
+    width: calc(33.33% - 5px);
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#proceedButton {
+    width: 38%;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 18px; /* Adjust font size as needed */
+    border-radius: 25px;
+}
+
+#calculateButton{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; 
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+  }
+  
+  #generateButton{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; 
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+  }
+  #rButton{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff; 
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  #generateButton:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+  #rButton:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+  #calculateButton:hover {
+    background-color: #3e8e41; /* Darker green */
+  }
+
+
+#spiResult {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+
+
+/* Additional Styles for SPI Calculator */
+.calculate-button-container {
+    display: none;
+}
+.marksheetContainer  {
+    display: none;
+}
+.resetContainer {
+    display: none;
+}
+.vertical-center {
+    margin: 10px;
+    position: absolute;
+   
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+
+
+.fieldsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust alignment as needed */
+    -ms-flex-item-align: baseline;
+    
+}
+
+
+
+.subject-field label{
+    display: block;
+    width: 50%;
+    margin-top: 20px;
+    
+}
+
+.subject-field input {
+    display: block;
+    width: 100%;
+}
+
+.input-group.horizontal {
+    display: flex;
+    flex-wrap: nowrap;  
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-group.horizontal label,
+ {
+    flex: 0 0 calc(33.33% - 10px);
+    margin-right: 1px;
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    padding: 20px 0;
+    color: #fff;
+    opacity: 80%;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links li a:hover {
+    text-decoration: underline;
+  }
+
+
+/* footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 0;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .footer-links li:last-child {
+    margin-right: 0;
+  }
+  
+  .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links li a:hover {
+    text-decoration: underline;
+  } */
+  @media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+    body{
+        background-image: none !important;
+        background-image:none;
+    }
+}
+#bg{
+    background-image: url(bgimg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+#header{
+    background-color: black;
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-left:0px;
+    margin-right: 0px;
+    opacity: 80%;
+}
+#logo{
+    margin:30px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    height: 150px;
+}
+
+

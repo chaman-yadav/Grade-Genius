@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head class="no-print">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SPI Calculator</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/spi_calculator_styles.css">
+</head>
+
+<!-- Body Section -->
+<body id="bg">
+    <!-- Header Section -->
+    <div id="header" class="no-print">
+        <!-- Logo -->
+        <img id="logo" src="image/logo_extended.png">
+    </div>
+
+    <!-- Navigation Section -->
+    <div class="navigation no-print">
+        <!-- Home Link -->
+        <a href="../homepage.html">Home</a>
+        <!-- SPI Calculator Dropdown -->
+        <div class="dropdown">
+            <button class="dropbtn">SPI Calculator</button>
+            <!-- Dropdown Content -->
+            <div class="dropdown-content">
+                <a href="iitgoa_spi_calculator.html">For IIT Goa</a>
+                <a href="spi_calculator.html">For Other Colleges</a>
+            </div>
+        </div>
+        <!-- CPI Calculator Link -->
+        <a href="cpi.html">CPI Calculator</a>
+        <!-- SPI Predictor Link -->
+        <a href="spi_predictor.html">SPI Predictor</a>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Heading and Form -->
+        <div class="no-print">
+            <h1>SPI Calculator</h1>
+            <form id="spiForm" class="full-width-form">
+                <!-- Number of Subjects Input -->
+                <label for="numSubjects">Number of Subjects:</label>
+                <input type="number" id="numSubjects" required min="1"><br><br>
+                <!-- Proceed Button -->
+                <button id="proceedButton" type="button">Proceed</button><br><br>
+            </form>
+        </div>
+
+        <!-- Containers for Fields -->
+        <div class="fieldsContainerMarksheet" id="fieldsContainerMarksheet"></div>
+        <div class="fieldsContainer" id="fieldsContainer">
+            <!-- Fields will be added dynamically here -->
+        </div>
+
+        <!-- Calculate Button Container -->
+        <div class="calculate-button-container vertical-cente no-print" id="calculateButtonContainer">
+            <!-- Calculate SPI Button -->
+            <button id="calculateButton" type="submit" style="align-self: center;">Calculate SPI</button>
+        </div>
+
+        <!-- Marksheet Button Container -->
+        <div class="marksheetContainer no-print" id="marksheetContainer">
+            <!-- Generate Marksheet Button -->
+            <button id="generateButton" type="submit">Marksheet</button>
+        </div>
+
+        <!-- Reset Button Container -->
+        <div class="resetContainer no-print" id="resetContainer">
+            <!-- Reset Button with link -->
+            <button id="rButton" type="submit"><a href="iitgoa_spi_calculator.html">Reset</a></button>
+        </div>
+
+        <!-- SPI Result Placeholder -->
+        <p id="spiResult"></p>
+    </div>
+    
+    <!-- JavaScript Source -->
+    <script src="js/spi_calculator.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="no-print">
+        <div class="footer-content">
+            <!-- Copyright Notice -->
+            <p>&copy; 2024 Grade Genius. All rights reserved.</p>
+            <!-- Footer Links -->
+            <ul class="footer-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>

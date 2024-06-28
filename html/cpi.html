@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>SPI Calculator</title>
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/spi_calculator_styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <body id="bg">
+        <div id="header">
+            <!-- Logo -->
+            <img id="logo" src="image/logo_extended.png">
+        </div>
+        <!-- Navigation menu -->
+        <div class="navigation">
+            <!-- Navigation links -->
+            <a href="../homepage.html">Home</a>
+            <!-- Dropdown menu for SPI Calculator -->
+            <div class="dropdown">
+                <button class="dropbtn">SPI Calculator</button>
+                <div class="dropdown-content">
+                    <!-- Links for different calculators -->
+                    <a href="iitgoa_spi_calculator.html">For IIT Goa</a>
+                    <a href="spi_calculator.html">For Other Colleges</a>
+                </div>
+            </div>
+            <!-- Link to CPI Calculator -->
+            <a href="cpi.html">CPI Calculator</a>
+            <!-- Link to SPI Predictor -->
+            <a href="spi_predictor.html">SPI Predictor</a>
+        </div>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Title for CPI Calculator -->
+        <h1>CPI Calculator</h1>
+        <!-- Form for CPI calculation -->
+        <form id="spiForm" class="full-width-form">
+            <!-- Input field for number of semesters -->
+            <label for="numSubjects">Number of Semester:</label>
+            <input type="number" id="numSubjects" required min="1"><br><br>
+            <!-- Button to proceed and generate semester input fields -->
+            <button id="proceedButton" type="button">Proceed</button><br><br>
+            <!-- Container for dynamic input fields -->
+            <div class="fieldsContainer" id="fieldsContainer">
+                <!-- Fields will be added dynamically here -->
+            </div>
+            <!-- Container for the calculate button -->
+            <div class="calculate-button-container" id="calculateButtonContainer">
+                <!-- Button to calculate CPI -->
+                <button id="calculateButton" type="submit">Calculate CPI</button>
+            </div>
+            <!-- Paragraph to display CPI result -->
+            <p id="spiResult"></p>
+        </form>
+    </div>
+    <!-- External JavaScript file -->
+    <script src="js/cgpi.js"></script>
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content -->
+        <div class="footer-content">
+            <!-- Copyright information -->
+            <p>&copy; 2024 Grade Genius. All rights reserved.</p>
+            <!-- Footer links -->
+            <ul class="footer-links">
+                <li><a href="../homepage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
